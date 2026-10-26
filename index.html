@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AudioRad | Transcrição e Digitação de Laudos Radiológicos</title>
+    <!-- Fonte Inter Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #0A2540;
+            --accent: #00D4B2;
+            --accent-hover: #00B396;
+            --bg: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+
+        header {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .hero {
+            background: var(--card-bg);
+            padding: 60px 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            border: 1px solid #E2E8F0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--primary);
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .modalities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid #E2E8F0;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .contact-section {
+            background: var(--primary);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        .contact-section p {
+            color: #94A3B8;
+            margin-bottom: 30px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-outline {
+            display: inline-block;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .btn-outline:hover {
+            background: var(--accent);
+            color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Audio<span>Rad</span></div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Agilidade e Precisão em Laudos Radiológicos</h1>
+            <p>Serviço especializado de transcrição e digitação remota de exames diagnósticos diretamente no seu sistema RIS/PACS.</p>
+            <a href="https://wa.me/5582994200513?text=Olá,%20gostaria%20de%20solicitar%20um%20teste%20gratuito%20da%20AudioRad" target="_blank" class="btn-primary">Solicitar Teste Cortesia (10 Laudos)</a>
+        </section>
+
+        <!-- Modalidades -->
+        <section class="modalities">
+            <div class="card">
+                <h3>Tomografia (TC)</h3>
+                <p>Agilidade e precisão em grandes volumes e rotinas de urgência.</p>
+            </div>
+            <div class="card">
+                <h3>Ressonância (RM)</h3>
+                <p>Padronização rigorosa com macros e vocabulário técnico preciso.</p>
+            </div>
+            <div class="card">
+                <h3>Mamografia (MMG)</h3>
+                <p>Laudos estruturados em perfeita conformidade BI-RADS.</p>
+            </div>
+            <div class="card">
+                <h3>Ultrassom (USG)</h3>
+                <p>Suporte rápido para otimizar o tempo do médico examinador.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section class="contact-section">
+            <h2>Entre em Contato</h2>
+            <p>Atendemos clínicas, hospitais, centros de imagem e empresas de telerradiologia em todo o Brasil no modelo Home Office.</p>
+            <div class="contact-links">
+                <a href="https://wa.me/5582994200513" target="_blank" class="btn-outline">WhatsApp: (82) 99420-0513</a>
+                <a href="mailto:contato.vinicio.leite@gmail.com" class="btn-outline">E-mail: contato.vinicio.leite@gmail.com</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; AudioRad — Transcrição e Digitação Médica Remota. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
